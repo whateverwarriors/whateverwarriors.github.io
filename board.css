@@ -41,7 +41,7 @@ header {
     
 }
 
-/*---------------------------Nav and UL/LI-------------------*/
+/*---------------------------Nav and UL/LI----------------------------*/
 .menu {
     margin: 0 auto;
     padding: 20px;
@@ -114,15 +114,15 @@ ul li a {
     display: block;
 }
 
-/*------------------------------------------------*/
+/*---------------------------Icons----------------------------*/
 
 .fbicon:hover {
     background-color: blue;
     border-radius: 50%;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease; 
-    -o-transition: all 300ms ease; 
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
     transition: all 300ms ease; 
 }
 
