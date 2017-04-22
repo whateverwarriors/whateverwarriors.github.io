@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head> 
             <title>Whatever Warriors | SoundBoard</title>
         
@@ -15,6 +15,8 @@
         <!--CDNs, icons-->
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
         <link rel="shortcut icon" type="image/x-icon" href="https://static.wixstatic.com/media/ae99bc_46db2d7f1f3f4a03ab8b6126f71753d2~mv2.jpg/v1/fill/w_368,h_268,al_c,q_80,usm_0.66_1.00_0.01/ae99bc_46db2d7f1f3f4a03ab8b6126f71753d2~mv2.webp">
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         <link rel="stylesheet" href="board.css">
         
@@ -44,12 +46,23 @@
           
     </header>
     
+    <main>
+        <div class="w3-content w3-section" style="max-width:none; max-height:30%;">
+
+            <img class="mySlides w3-animate-fading" src="camera.png" width="700" height="500">
+            <img class="mySlides w3-animate-fading" src="cameraprofilehd.jpg" width="700" height="500">
+            <img class="mySlides w3-animate-fading" src="desk.jpg" width="700" height="500">
+            <img class="mySlides w3-animate-fading" src="blurrystreetbokeh.jpg" width="700" height="500">
+<!--
+            <div class="mySlides w3-animate-fading" id="divSlide" style="background-color:red;">
+                <h3> Hello! </h3>
+            </div>
+-->
+        </div>
+    </main>
+    
         <footer>
-            <hr>
-            
             <div id="footerid"></div>
-            
-            &copy; 2017 <a href="http://tydyedesign.github.io" target="_blank">TyDyeDesign </a>
         </footer>
     
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -60,6 +73,23 @@
         
         <script type="text/javascript" src="navbar.js"> </script>
         <script type="text/javascript" src="footer.js"> </script>
+    
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
     
 </body>
 </html>
