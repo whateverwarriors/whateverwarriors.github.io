@@ -41,6 +41,27 @@ header {
     
 }
 
+main {
+    text-align: center;
+}
+
+article.blogpost {
+    max-width: 700px;
+    text-align: center;
+    border: solid black .1em;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+    display: block;
+}
+
+.articlehr {
+    width: 50%;
+}
+
+.timestamp {
+    opacity: .6;
+    float: right;
+}
+
 /*---------------------------Nav and UL/LI----------------------------*/
 .menu {
     margin: 0 auto;
@@ -112,6 +133,10 @@ ul {
 
 ul li a {
     display: block;
+}
+
+.navclass {
+    display: inline;
 }
 
 /*---------------------------Icons----------------------------*/
