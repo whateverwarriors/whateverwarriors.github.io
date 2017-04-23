@@ -43,6 +43,7 @@ header {
 
 main {
     text-align: center;
+    margin: 1em;
 }
 
 article.blogpost {
